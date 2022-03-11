@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movie project responesive</title>
+    <!-- link icons -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- link css -->
+    <link rel="stylesheet" href="movieDetail.css">
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+</head>
+<body>
+    <!-- navbar -->
+    <header>
+        <a href="#" class="logo">
+            <i class='bx bxs-movie'></i> Movies
+        </a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <!-- menu -->
+        <ul class="navbar">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#movies">Movies</a></li>
+            <li><a href="#coming">Coming</a></li>
+            <li><a href="#newsletter">Newsletter</a></li>
+        </ul>
+        <a href="#" class="btn">Sign In</a>
+    </header>
+
+    <!-- movie -->
+    <section class="movie movie_container" id="movie">
+        <div class="movie_info">
+            <div class="movie_info_details">
+                <h1>Thợ Săn Cổ Vật</h1>
+                <p>Original title: Uncharted</p>
+                <div class="movie_info_details_time">
+                    <a href="#" class="movie_info_details_time_year_release">2022</a>
+                    <p>1h 56m</p>
+                </div>
+            </div>
+            <div class="movie_info_rating">
+                <div class="movie_info_rating_movie_rating">
+                    <h3>MOVIE RATING</h3>
+                    <p><i class='bx bxs-star'></i>6.7/10</p>
+                </div>
+                <div class="movie_info_rating_your_rating">
+                    <h3>YOUR RATING</h3>
+                    <div class="movie_info_rating_your_rating_icons">
+                        <i class='bx bx-smile' ></i>
+                        <i class='bx bx-sad' ></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="movie_trailer">
+            <img src="./img/movie1.jpg" alt="" class="movie_trailer_img">
+            <div class="movie_trailer_video">
+                <video
+                    src="https://imdb-video.media-imdb.com/vi420201241/1434659607842-pgv4ql-1644274969357.mp4?Expires=1647087473&Signature=sHNiyBkuJabHX7tFopJQP7Ux-iFmgIUe-TCwlij5CMuT2kZu6bdKO-r1v6agQUf0u6TMHZYUUetwRhXrDV8mGQhzCtsItmE-6AFA5d-O2Z8gXPyKqiqs4irgRAnUme6FzBwph7F-F26BkBsg1OBOLSIVfXve3nu4Np5SpqwiPHu7ARNpr-8C7UYj7Y~vB7wnldKVs8VZG7zT3ag-b2GH~GMCCstKyMCiyWJv5-UR9QEWgEbXMQFK~3p4JYK1103FFSwX9UAQ84-5vtJIXI3OKKNUyyg8Ig8Y5YyD4LUr1913-pMifgiN2w~iH-c81L7EHfuj9UY9NI2tXe0P9z2M4w__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA"
+                    controls
+                ></video>
+            </div>
+        </div>
+
+        <div class="movie_extensions">
+            <div class="movie_extensions_category">
+                <a href="#">Action</a>
+                <a href="#">Adventure</a>
+            </div>
+            <div class="movie_extensions_book">
+                <a href="#">Book Now</a>
+            </div>
+        </div>    
+
+        <div class="movie_rating_extra">
+            <p><i class='bx bxs-star'></i>6.7/10</p>
+            <p>
+                <i class='bx bx-smile' ></i>
+                <i class='bx bx-sad' ></i>
+                Rate
+            </p>
+        </div>
+
+        <div class="movie_details">
+            <div>Street-smart Nathan Drake is recruited by seasoned treasure hunter Victor "Sully"
+                Sullivan to recover a fortune amassed by Ferdinand Magellan, and lost 500 years ago by the House of Moncada.</div>
+            <div>
+                <h4>Director</h4>
+                <a href="#">Ruben Fleischer</a>
+            </div>
+            <div>
+                <h4>Writers</h4>
+                <a href="#">Rafe Judkins</a>
+                <a href="#">Art Marcum</a>
+                <a href="#">Matt Holloway</a>
+            </div>
+            <div>
+                <h4>Stars</h4>
+                <a href="#">Tom Holland</a>
+                <a href="#">Mark Wahlberg</a>
+                <a href="#">Antonio Banderas</a>
+            </div>
+        </div>
+        
+        
+    </section>
+
+    <!-- newsletter -->
+    <section class="newsletter" id="newsletter">
+        <h2>Subscribe To Get <br>Newsletter</h2>
+        <form action="">
+            <input type="email" class="email" placeholder="Enter your email address" required>
+            <input type="submit" value="Subscribe" class="btn">
+        </form>
+    </section>
+
+    <!-- footer -->
+    <section class="footer">
+        <a href="#" class="logo">
+            <i class='bx bxs-movie'></i> Movies
+        </a>
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-tiktok'></i></a>
+        </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- link to custom js -->
+    <script src="./main.js"></script>
+</body>
+</html>
