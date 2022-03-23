@@ -4,7 +4,22 @@
     color: white;
     background-color: rgb(55, 52, 224);
     border: 1px solid;
-    margin-left: 5%;
+    margin: 2% 5% 6%;
+    
+}
+
+#seats-screen {
+    width: 100%;
+    max-width: 100%;
+    margin: 2%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+th {
+    text-align: left;
 }
 
 .ui {
