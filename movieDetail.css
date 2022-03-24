@@ -240,7 +240,7 @@ header.shadow .navbar a{
     border: 1px solid #3b3b3b;
 }
 
-.movie_trailer_video video{
+.movie_trailer_video iframe{
     width: 100%!important;
     height: 100%!important;
     object-fit: cover;

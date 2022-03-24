@@ -1,285 +1,434 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Ticket booking</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movie project responesive</title>
+    <!-- link icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- link css -->
     <link rel="stylesheet" href="booking.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
-    <div class="ui">
-        <div id="screen">Screen</div>
-    </div>
-    <table class="table" id="seats-screen">
-        <thead id="screen-head">
-            <th></th>
-            <th>1</th>
-            <th>2</th>
-            <th>3</th>
-            <th>4</th>
-            <th>5</th>
-            <th>6</th>
-            <th>7</th>
-            <th>8</th>
-            <th>9</th>
-            <th>10</th>
-            <th>11</th>
-            <th>12</th>
+    <!-- navbar -->
+    <header>
+        <a href="#" class="logo">
+            <i class='bx bxs-movie'></i> Movies
+        </a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+    
+        <!-- menu -->
+        <ul class="navbar">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#movies">Movies</a></li>
+            <li><a href="#coming">Coming</a></li>
+            <li><a href="#newsletter">Newsletter</a></li>
+        </ul>
+        <a href="#" class="btn">Sign In</a>
+    </header>
+
+
+    <section class="ticket-booking">
+        <div class="ui">
+            <div id="screen">Screen</div>
+            <table class="table" id="seats-screen">
+                <thead id="screen-head">
+                    <th></th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                    <th>6</th>
+                    <th>7</th>
+                    <th>8</th>
+                    <th>9</th>
+                    <th>10</th>
+                    <th>11</th>
+                    <th>12</th>
             
-        </thead>
-        <tr id="table-screen-row">
-            <td>A</td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="1"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="2"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="3"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="4"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="5"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="6"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="7"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="8"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="9"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="10"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="11"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="12"></td>
-        
-        </tr>
-        <tr id="table-screen-row">
-            <td>B</td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="13"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="14"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="15"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="16"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="17"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="18"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="19"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="20"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="21"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="22"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="23"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="24"></td>
-        
-        </tr>
-        <tr id="table-screen-row">
-            <td>C</td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="25"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="26"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="27"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="28"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="29"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="30"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="31"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="32"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="33"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="34"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="35"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="36"></td>
-        
-        </tr>
-        <tr id="table-screen-row">
-            <td>D</td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="37"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="38"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="39"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="40"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="41"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="42"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="43"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="44"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="45"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="46"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="47"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="48"></td>
-        
-        </tr>
-        <tr id="table-screen-row">
-            <td>E</td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="49"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="50"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="51"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="52"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="53"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="54"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="55"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="56"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="57"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="58"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="59"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="60"></td>
-        
-        </tr>
-        <tr id="table-screen-row">
-            <td>F</td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="61"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="62"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="63"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="64"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="65"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="66"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="67"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="68"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="69"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="70"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="71"></td>
-        
-        
-            <td><img src="img/resources/empty-seat.png" class="empty-seat" id="72"></td>
-        
-        </tr>       
-    </table>
-    <div class="text-center">
-        <button type="button" class="btn btn-primary btn-lg submitBtn" id="confirmSelection">Confirm Selection</button>
-        <div class="screen-map">
-            <label for="empty-seat-map">Selected Seat</label>
-            <img src="img/resources/booked-seat.png" class="booked-seat-map" id="booked-seat-map">
-            <br>
-            <label for="">Reserved Seat</label>
-            <img src="img/resources/reserved-seat.png" class="reserved-seat-map" id="reserved-seat-map">
-            <br>
-            <label for="">Empty Seat</label>
-            <img src="img/resources/empty-seat.png" class="empty-seat-map" id="empty-seat-map">
+                </thead>
+                <tr id="table-screen-row">
+                    <td>A</td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="1"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="2"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="3"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="4"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="5"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="6"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="7"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="8"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="9"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="10"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="11"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="12"></td>
+            
+                </tr>
+                <tr id="table-screen-row">
+                    <td>B</td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="13"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="14"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="15"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="16"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="17"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="18"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="19"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="20"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="21"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="22"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="23"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="24"></td>
+            
+                </tr>
+                <tr id="table-screen-row">
+                    <td>C</td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="25"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="26"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="27"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="28"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="29"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="30"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="31"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="32"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="33"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="34"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="35"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="36"></td>
+            
+                </tr>
+                <tr id="table-screen-row">
+                    <td>D</td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="37"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="38"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="39"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="40"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="41"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="42"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="43"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="44"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="45"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="46"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="47"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="48"></td>
+            
+                </tr>
+                <tr id="table-screen-row">
+                    <td>E</td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="49"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="50"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="51"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="52"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="53"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="54"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="55"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="56"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="57"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="58"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="59"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="60"></td>
+            
+                </tr>
+                <tr id="table-screen-row">
+                    <td>F</td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="61"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="62"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="63"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="64"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="65"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="66"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="67"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="68"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="69"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="70"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="71"></td>
+            
+            
+                    <td><img src="img/resources/empty-seat.png" class="empty-seat" id="72"></td>
+            
+                </tr>
+            </table>
+            <div class="screen-map">
+                    <div class="text-center">
+                        <button type="button" class="btn btn-primary btn-lg submitBtn" id="confirmSelection">Confirm Selection</button>
+                    <div>
+                        <label for="empty-seat-map">Selected Seat</label>
+                        <img src="img/resources/booked-seat.png" class="booked-seat-map" id="booked-seat-map">
+                    </div>
+                    <div>
+                        <label for="">Reserved Seat</label>
+                        <img src="img/resources/reserved-seat.png" class="reserved-seat-map" id="reserved-seat-map">
+                    </div>
+                    <div>
+                        <label for="">Empty Seat</label>
+                        <img src="img/resources/empty-seat.png" class="empty-seat-map" id="empty-seat-map">
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+        
+    </section>
+    
+
+    <!-- movies -->
+    <section class="movies" id="movies">
+        <h2 class="heading">Movies</h2>
+        <!-- movies container -->
+        <div class="movies-container">
+            <!-- box 1 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/m1.jpg" alt="m1">
+                </div>
+                <h3>Venom</h3>
+                <span>120 min | Action</span>
+            </div>
+            <!-- box 2 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/m2.jpg" alt="m2">
+                </div>
+                <h3>Dunkirk</h3>
+                <span>120 min | Adventure</span>
+            </div>
+            <!-- box 3 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/m3.jpg" alt="m3">
+                </div>
+                <h3>Batman vs Superman</h3>
+                <span>120 min | Thriller</span>
+            </div>
+            <!-- box 4 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/m4.jpg" alt="m4">
+                </div>
+                <h3>John Wick 2</h3>
+                <span>120 min | Adventure</span>
+            </div>
+            <!-- box 5 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/m5.jpg" alt="m5">
+                </div>
+                <h3>Aquaman</h3>
+                <span>120 min | Action</span>
+            </div>
+            <!-- box 6 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/m6.jpg" alt="m6">
+                </div>
+                <h3>Black Panther</h3>
+                <span>120 min | Thriller</span>
+            </div>
+            <!-- box 7 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/m7.jpg" alt="m7">
+                </div>
+                <h3>Thor</h3>
+                <span>120 min | Adventure</span>
+            </div>
+            <!-- box 8 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/m8.png" alt="m8">
+                </div>
+                <h3>Bumblebee</h3>
+                <span>120 min | Thriller</span>
+            </div>
+            <!-- box 9 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/m9.jpg" alt="m9">
+                </div>
+                <h3>Mortal Engines</h3>
+                <span>120 min | Action</span>
+            </div>
+            <!-- box 10 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/m10.jpg" alt="m10">
+                </div>
+                <h3>UnderWorld Blood Wars</h3>
+                <span>120 min | Action</span>
+            </div>
+        </div>
+    </section>
+    
+    <!-- newsletter -->
+    <section class="newsletter" id="newsletter">
+        <h2>Subscribe To Get <br>Newsletter</h2>
+        <form action="">
+            <input type="email" class="email" placeholder="Enter your email address" required>
+            <input type="submit" value="Subscribe" class="btn">
+        </form>
+    </section>
+    
+    <!-- footer -->
+    <section class="footer">
+        <a href="#" class="logo">
+            <i class='bx bxs-movie'></i> Movies
+        </a>
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-tiktok'></i></a>
+        </div>
+    </section>
+    
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- link to custom js -->
+    <script src="./main.js"></script>
 </body>
 </html>
